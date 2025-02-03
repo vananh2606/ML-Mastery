@@ -29,7 +29,7 @@ kfold = KFold(n_splits=10, random_state=None)
 model = LinearRegression()
 scoring = "neg_mean_squared_error"
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print(results.mean())
+print(f"Linear Regression: {results.mean()}")
 
 # Ridge Regression
 from pandas import read_csv
@@ -63,7 +63,7 @@ kfold = KFold(n_splits=10, random_state=None)
 model = Ridge()
 scoring = "neg_mean_squared_error"
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print(results.mean())
+print(f"Ridge Regression: {results.mean()}")
 
 # Lasso Regression
 from pandas import read_csv
@@ -96,7 +96,7 @@ kfold = KFold(n_splits=10, random_state=None)
 model = Lasso()
 scoring = "neg_mean_squared_error"
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print(results.mean())
+print(f"Lasso Regression: {results.mean()}")
 
 # ElasticNet Regression
 from pandas import read_csv
@@ -129,7 +129,7 @@ kfold = KFold(n_splits=10, random_state=None)
 model = ElasticNet()
 scoring = "neg_mean_squared_error"
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print(results.mean())
+print(f"ElasticNet Regression: {results.mean()}")
 
 # KNN Regression
 from pandas import read_csv
@@ -162,7 +162,7 @@ kfold = KFold(n_splits=10, random_state=None)
 model = KNeighborsRegressor()
 scoring = "neg_mean_squared_error"
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print(results.mean())
+print(f"KNN Regression: {results.mean()}")
 
 # Decision Tree Regression
 from pandas import read_csv
@@ -195,7 +195,7 @@ kfold = KFold(n_splits=10, random_state=None)
 model = DecisionTreeRegressor()
 scoring = "neg_mean_squared_error"
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print(results.mean())
+print(f"Decision Tree Regression: {results.mean()}")
 
 # SVM Regression
 from pandas import read_csv
@@ -229,4 +229,4 @@ kfold = KFold(n_splits=10, random_state=None)
 model = SVR()
 scoring = "neg_mean_squared_error"
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
-print(results.mean())
+print(f"SVM Regression: {results.mean()}")
