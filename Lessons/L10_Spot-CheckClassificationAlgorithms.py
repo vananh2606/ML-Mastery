@@ -1,10 +1,10 @@
-# LR Classification
+# Logistic Regression (Classification)
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LogisticRegression
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -14,15 +14,15 @@ num_folds = 10
 kfold = KFold(n_splits=10, random_state=None)
 model = LogisticRegression()
 results = cross_val_score(model, X, Y, cv=kfold)
-print(f"LR Classification: {results.mean()}")
+print(f"Logistic Regression (LRC): {results.mean()}")
 
-# LDA Classification
+# Linear Discriminant Analysis
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -32,15 +32,15 @@ num_folds = 10
 kfold = KFold(n_splits=10, random_state=None)
 model = LinearDiscriminantAnalysis()
 results = cross_val_score(model, X, Y, cv=kfold)
-print(f"LDA Classification: {results.mean()}")
+print(f"Linear Discriminant Analysis (LDA): {results.mean()}")
 
-# KNN Classification
+# K-Nearest Neighbors Classification
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -50,15 +50,15 @@ num_folds = 10
 kfold = KFold(n_splits=10, random_state=None)
 model = KNeighborsClassifier()
 results = cross_val_score(model, X, Y, cv=kfold)
-print(f"KNN Classification: {results.mean()}")
+print(f"K-Nearest Neighbors Classification: {results.mean()}")
 
-# GNB Classification
+# Gaussian Naive Bayes
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.naive_bayes import GaussianNB
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -67,15 +67,15 @@ Y = array[:, 8]
 kfold = KFold(n_splits=10, random_state=None)
 model = GaussianNB()
 results = cross_val_score(model, X, Y, cv=kfold)
-print(f"GNB Classification: {results.mean()}")
+print(f"Gaussian Naive Bayes (GNB): {results.mean()}")
 
-# CART Classification
+# Decision Tree Classification
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.tree import DecisionTreeClassifier
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -84,15 +84,15 @@ Y = array[:, 8]
 kfold = KFold(n_splits=10, random_state=None)
 model = DecisionTreeClassifier()
 results = cross_val_score(model, X, Y, cv=kfold)
-print(f"CART Classification: {results.mean()}")
+print(f"Decision Tree Classification: {results.mean()}")
 
-# SVM Classification
+# Support Vector Machines Classification
 from pandas import read_csv
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.svm import SVC
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -101,4 +101,4 @@ Y = array[:, 8]
 kfold = KFold(n_splits=10, random_state=None)
 model = SVC()
 results = cross_val_score(model, X, Y, cv=kfold)
-print(f"SVM Classification: {results.mean()}")
+print(f"Support Vector Machines Classification (SVC): {results.mean()}")

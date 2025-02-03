@@ -6,7 +6,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LogisticRegression
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -24,7 +24,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LogisticRegression
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -42,7 +42,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LogisticRegression
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -60,7 +60,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -83,7 +83,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -108,7 +108,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LinearRegression
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
@@ -141,7 +141,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LinearRegression
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
@@ -175,7 +175,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LinearRegression
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
