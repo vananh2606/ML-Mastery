@@ -7,7 +7,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import BaggingClassifier
 from sklearn.tree import DecisionTreeClassifier
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -27,7 +27,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -46,7 +46,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import ExtraTreesClassifier
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -66,7 +66,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import BaggingRegressor
 from sklearn.tree import DecisionTreeRegressor
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
@@ -102,7 +102,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestRegressor
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
@@ -137,7 +137,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import ExtraTreesRegressor
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
@@ -174,7 +174,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import AdaBoostClassifier
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -212,7 +212,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import AdaBoostRegressor
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
@@ -247,7 +247,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import GradientBoostingRegressor
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",
@@ -318,7 +318,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.svm import SVR
 from sklearn.ensemble import VotingRegressor
 
-filename = "Data/housing.csv"
+filename = "../Data/housing.csv"
 names = [
     "CRIM",
     "ZN",

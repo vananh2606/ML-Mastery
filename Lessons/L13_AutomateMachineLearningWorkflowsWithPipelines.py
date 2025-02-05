@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 # load data
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -36,7 +36,7 @@ from sklearn.decomposition import PCA
 from sklearn.feature_selection import SelectKBest
 
 # load data
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values

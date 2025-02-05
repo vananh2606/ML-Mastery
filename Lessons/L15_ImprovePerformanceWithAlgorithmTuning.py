@@ -4,7 +4,7 @@ from pandas import read_csv
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import GridSearchCV
 
-filename = "Data/pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -25,7 +25,7 @@ from scipy.stats import uniform
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import RandomizedSearchCV
 
-filename = "Data\pima-indians-diabetes.data.csv"
+filename = "../Data/pima-indians-diabetes.data.csv"
 names = ["preg", "plas", "pres", "skin", "test", "mass", "pedi", "age", "class"]
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
